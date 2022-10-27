@@ -1,35 +1,42 @@
-> _Fork_ deze leertaak en ga aan de slag. 
-Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. 
-De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+# Nuxt 3 Minimal Starter
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
-## Inhoudsopgave
+## Setup
 
-  * [Beschrijving](#beschrijving)
-  * [Kenmerken](#kenmerken)
-  * [Installatie](#installatie)
-  * [Gebruik](#gebruik)
-  * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
+Make sure to install the dependencies:
 
-## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+```bash
+# yarn
+yarn install
 
-## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+# npm
+npm install
 
-## Installatie
+# pnpm
+pnpm install --shamefully-hoist
+```
 
-## Gebruik
+## Development Server
 
-## Bronnen
+Start the development server on http://localhost:3000
 
-## Licentie
+```bash
+npm run dev
+```
 
-![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
+## Production
 
-This work is licensed under [GNU GPLv3](./LICENSE).
+Build the application for production:
+
+```bash
+npm run build
+```
+
+Locally preview production build:
+
+```bash
+npm run preview
+```
+
+Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.

@@ -1,52 +1,128 @@
+<!--
+De conventie voor naamgeving is sprintnaam-(sub)taaknaam
+Topics: (sub)task semester-naam, semesternummer, sprint-naam, sprint-nummer
+-->
 
-# Choices, Choices - The Tech-stack
+# Choices, Choices - Justify Your Tech-stack
 
-Kies de beste tech-stack voor het ontwerpen en bouwen van een website voor een opdrachtgever.
+In deze deeltaak ga je een (nieuwe) tech-stack onderzoeken en de keuze voor deze tech-stack verantwoorden en presenteren.
 
 ## Context
+Deze deeltaak hoort bij sprint 15 "choices, choices". Dit is een opdracht die je individueel uitvoert.
 
-Deze leertaak hoort bij sprint 15: Coices, choices ... Dit is een opdracht die je individueel uitvoert voor een opdrachtgever.
+In het college S15W1-02-Hoe-Kies-Je-Een-Tech-Stack wordt behandeld hoe je een verantwoorde keuze voor een Tech-stack kan maken.
 
 ## Doel van deze opdracht
 
-Je leert onderbouwde keuzes te maken voor een geschikte tech-stack, de tools en frameworks die je gebruikt bij het realiseren van een opdracht voor een opdrachtgever.
+Je leert hoe je systematisch onderzoek doet naar een passende tech-stack voor een opdracht én hoe je deze keuze kunt onderbouwen en presenteren aan een specialistisch publiek.
 
 ## Werkwijze
 
-In deze leertaak ga je leren onderbouwd een keuze te maken voor een geschikt framework en tools die je wil inzetten voor jouw opdracht. 
+Deze opdracht gaat over [analyseren](#analyseren) van de DLC en is best uitgebreid. Zorg dat je genoeg tijd inruimt voor het uitvoeren van deze deeltaak!
 
-In [Sprint 14: Lose Your Head](https://github.com/fdnd-task/lose-your-head-the-client-case) ben je begonnen met het ontwerpen en maken van een opdracht voor een opdrachtgever met een framework en headless CMS. Is dit framework en CMS de beste keuze voor dit project? Misschien past een ander framework beter bij de opdracht, of werkt een ander CMS beter voor de opdrachtgever ... In deze sprint ga je onderzoeken welk framwork en tools het meest geschikt zijn voor de opdracht. 
+### Analyseren
 
-De keuze voor een geschikt framework en tooling hangt af van verschillende factoren, zoals de User Experience (UX), Content Management (CMS) en de Development Expererience (DX). Voor de UX is het belangrijk te weten wie de gebruikers zijn van de website, wat voor apparaten zij gebruiken en of ze bv snel internet hebben of juist niet. Het CMS gaat gebruikt worden door de opdrachtgevers of andere content beheerders. De DX wordt onder andere bepaald of de website onderdeel is van een ander systeem, met hoeveel developers je aan het project gaat werken en hoe lang je aan het project gaat werken. 
+Afgelopen sprints heb je websites gebouwd met tooling: Prismic.io, Sveltekit, GitHub en Netlify. Zo’n serie tools die met elkaar werken noemen we vaak een *tech-stack*. In deze leertaak onderzoek je wat de voor- en nadelen van een specifieke tech-stack zijn. Het staat je vrij een keuze te maken, voor de hand liggende keuzes voor frameworks zijn: Vue, React, Angular, Nuxt of Next maar Svelte, Sveltekit of iets totaal anders mag ook. Elk framework heeft specifieke backend systemen waar het goed mee samenwerkt, denk aan: Prismic.io, Supabase, Hygraph, Firebase etcetera. Daarnaast kan je ook specifieke tools voor specifieke doeleinden gebruiken, bijvoorbeeld: three.js of Babylon.js voor 3d animatie, d3.js voor datavisualisaties. Kortom, keuze te over.
 
-In deze sprint ga je onderzoeken wat een geschikte tech-stack is waarmee je de opdracht voor de opdrachtgever goed kan maken en onderhouden. Voor deze sprint ga je dezelfde User Story als sprint 14 uitwerken, maar dan met een ander framework, een andere tool of een ander headless CMS. Zo kun je aan het eind van deze sprint een goede vergelijking maken van hoe verschillende frameworks en tools werken en welke het beste is voor jouw opdracht. 
+Bij het onderzoeken van een mogelijke tech-stack is het belangrijk de belanghebbenden - in het engels *stakeholders* - goed in acht te nemen. Bij het werken met de tech-stack komen immers meerdere partijen samen. Jouw organisatie die als ontwikkelaar van een systeem ingehuurd wordt, de gebruiker die uiteindelijk met het systeem moet gaan werken én (medewerkers van) de opdrachtgever die het systeem gaat beheren.
 
+Jouw keuze voor een tech-stack heeft enorme impact op alledrie deze partijen en een verkeerde keuze kan een onbruikbaar systeem opleveren, iets wat we natuurlijk ten allen tijden willen voorkomen. Daarom is het verstandig bij het onderzoeken van een mogelijke tech-stack verschillende invalshoeken te gebruiken.
 
-### Aanpak
+In jouw onderzoek ga je van de drie eerdergenoemde invalshoeken uit bij het onderzoeken van de gebruikservaring:
+- [User eXperience (UX)](#1-user-experience)
+- [Developer eXperience (DX)](#2-developer-experience)
+- [Content Management eXperience (CMX)](#3-content-management-experience)
 
-1. Maak een fork van [deze leertaak](https://github.com/fdnd-task/choices-choices-the-tech-stack/).
-2. Kopieer de User Story waar jij aan gaat werken naar de Readme van de geforkte repository. Dit is wat je gaat ontwerpen, maken en testen
-3. Kies een ander framwork of tool waarmee je deze User Story nog een keer gaat realiseren
-4. Verwerk de feedback die je bij de Sprint Review van de vorige sprint hebt gekregen
-5. Documenteer doorlopend jouw proces aan de hand van de dev-lifecycle, alle (technische en ontwerp) beslissingen dienen onderbouwd te worden en je verwijst naar alle bronnen die je bij de verschillende fases gebruikt hebt
-6. Schrijf tenslotte een conclusie waarin je het frameworks en tools die je hebt gebruikt in sprint 14 en sprint 15 vergelijkt en doe een aanbeveling voor de beste tech-stack voor jouw opdracht
+Begin met het op een rij zetten van een tech-stack, je kunt hierbij hulp vragen aan je docenten of mede-studenten. Voel je vrij om iets te kiezen waar je nog geen ervaring mee hebt, we gaan immers onderzoeken! 
 
+N.B.: Wellicht helpt het je om een paar van de [bronnen](#bronnen) door te lezen om grip te krijgen op waar we het over hebben. Dat gaat je helpen bij het uitvoeren van onderstaande opdrachten.
+
+#### 1. User eXperience
+
+Voor de UX is het belangrijk te weten wie de gebruikers zijn van de website, wat voor apparaten zij gebruiken en of ze bv snel internet hebben of juist niet. Als je het antwoord op bovenstaande vragen hebt onderzoek je wat voor type pagina jouw tech-stack genereert. Is het heel zwaar op 3d animatie? Vraagt de frontend veel javascript rekenkracht? Is er veel netwerkverkeer bij het gebruik van jouw toepassing? Kan het omgaan met het wegvallen van het internet of is er een continue verbinding nodig?
+
+Denk aan de door jou in het verleden bij FDND opgedane kennis omtrent UX bij het uitvoeren van dit onderzoek.
+
+##### Aanpak
+1. Onderzoek jouw tech-stack op user experience. Bijvoorbeeld door het doen van een snelle WCAG audit met lighthouse of Axe. Houdt je eerdere ervaring bij FDND met betrekking tot UX in het achterhoofd.
+2. Documenteer je bevindingen in de wiki! 
+
+#### 2. Developer eXperience
+
+De ontwikkelervaring of *developer experience* wordt bepaald aan de hand van een aantal criteria.
+
+De basis van de ontwikkelervaring ligt in de **functie** van een ontwikkeltool. Een mooie interface of een marketingverhaal doen niet zo veel als de functionaliteit slecht is. Als het niet werkt, is er geen DX.
+
+Naast dat de tool moet werken, is het belangrijk dat de tool goede performance heeft en **betrouwbaar** is. Elk softwareproduct heeft bugs, maar hoe daar mee om gegaan wordt is belangrijk. Is er een groot ontwikkelteam en zijn er regelmatig updates en releases dan verhoogt dat de ontwikkelervaring.
+
+**Gemak** gaat bij DX niet alleen over het gebruiken van de tool zelf maar ook over documentatie, communities, knowledge bases, shortcuts, snippets, filters, etcetera. Al deze dingen dragen bij aan ontwikkelervaring.
+
+Tenslotte is een **heldere interface** (bijv. API) waar je tegen aan programmeert van onschatbare waarde. Als je niet weet wat je kunt verwachten werk je niet lekker. Helderheid vergroot de ontwikkelervaring.
+
+##### Aanpak
+
+1. Onderzoek jouw tech-stack op developer experience. Het beste is een klein project met de tech-stack proberen te realiseren, bijvoorbeeld een oude leertaak.
+2. Documenteer je bevindingen in de wiki! Bijvoorbeeld door genoemde punten te beschrijven: functies, betrouwbaarheid, gemak en helderheid.
+
+#### 3. Content Management eXperience
+
+Het CMS gaat gebruikt worden door de opdrachtgevers of andere content beheerders. Of de beheerders jouw CMS kunnen gebruiken hangt af van het gebruiksgemak en de benodigde technische capaciteit. Als je een ingewikkeld GraphQL systeem gebruikt met onderlinge afhankelijkheden moet een CM-team best tech-savvy zijn, bij een tool als prismic valt dat heel erg mee (zeker als je user-levels gebruikt!).
+
+Wat voor eisen stelt jouw tech-stack aan de beheerder van het systeem? Hebben ze genoeg aan domein-kennis van hun eigen bedrijf of moeten ze een deel van jouw skills als frontend designer/developer omarmen voor ze iets kunnen toevoegen of aanpassen?
+
+##### Aanpak
+
+1. Onderzoek jouw tech-stack op content management experience. De opleiding naast ons (Smart Media Production) gaat over content-beheer. Misschien kan je een van hun studenten interviewen over wat ze prettig vinden. Je kunt zelfs vragen of ze in een door jouw opgezet systeem content toe te voegen en of ze dat prettig vinden..
+2. Documenteer je bevindingen in de wiki! 
+
+#### 4. Rapportage
+
+Het hele onderzoek is te substantieel om te presenteren. Voeg daarom de conclusie en een paar *key-insights* uit elk van bovenstaande stappen samen in de Readme.md. Zorg er voor dat jouw stuk gemakkelijk leest voor iemand die weet wat het frontend vakgebied inhoudt. Je schrijft dus niet voor leken.
+
+##### Aanpak
+
+1. Begin met een korte inleiding waarin je de aanleiding en de stappen in het document beschrijft.
+2. Beschrijf in een alinea de conclusie en belangrijkste inzichten met betrekking tot de gebruikservaring (UX)
+3. Beschrijf in een alinea de conclusie en belangrijkste inzichten met betrekking tot de ontwikkelervaring (DX)
+4. Beschrijf in een alinea de conclusie en belangrijkste inzichten met betrekking tot de content management ervaring (CMX)
+5. Neem als conclusie een alinea op waarin je de voorwaarden benoemd die deze tech-stack aan de betrokken partijen stelt.
+
+#### 5. Presentatie
+
+De Readme.md is niet te presenteren. Zorg daarom dat je een korte presentatie maakt in bijvoorbeeld powerpoint, waarin je in maximaal 5 slides (zonder introsheet en agenda) jouw bevindingen presenteert.
+
+##### Aanpak
+
+1. Maak een mooie introsheet
+2. Laat een slide over voor de agenda
+3. Vertaal de 5 punten bij stap 4 naar slides, gebruik zo weinig mogelijk tekst maar probeer dingen visueel te maken. Hint: Denk terug aan de lessen van Charley!
+4. Vul de agenda aan met de titels van je dia’s…
+5. Presenteer in de squad!
+
+### Bronnen
+Hier wat bronnen die je kunnen helpen bij het structureren van je onderzoek:
+
+- https://medium.com/swlh/what-is-dx-developer-experience-401a0e44a9d9
+- https://www.softermii.com/blog/10-tips-in-choosing-the-best-tech-stack-for-your-web-application
+- https://symfony.com/ten-criteria
+- https://www.velvetech.com/blog/choosing-project-tech-stack-basic-principles/
+- https://tray.io/blog/align-revenue-ops-tech-stack
 
 ## Criteria
 
 Focus sprint 15 - In deze sprint ligt de focus op het maken van onderbouwde keuzes voor de frameworks, tools en workflow die je gebruikt voor je project.
 
-Voor deze leertaak gelden de gedragscriteria voor sprint 15: 
-* M: Je combineert onderbouwd principes, conventies en best-practices op het gebied van frontend, interface design en vormgeving
-* M: Je weegt belangen van de eindgebruiker en de eisen en wensen van een opdrachtgever af bij het realiseren van een oplossing voor een opdrachtgever
-* ~~C: Kan ontwerpkeuzes, eigen ideeën en producten overtuigend overbrengen aan belanghebbenden~~
-* P: Je selecteert de juiste principes, conventies en best-practices op het gebied van frontend, interface design en vormgeving om een passende oplossing voor een opdrachtgever te realiseren
-* L: Je maakt aangeboden en zelf gevonden materie eigen, gebruikt dit bij leertaken, deelt ervaring binnen de squad en leert van anderen
+Deze deeltaak hoort bij het gedragscriterium:
+
+C: Kan ontwerpkeuzes, eigen ideeën en producten overtuigend overbrengen aan belanghebbenden.
 
 Deze opdracht is done als:
 
- - [ ] Je hebt verschillende frameworks en tools onderzocht en uitgeprobeerd
- - [ ] Je hebt de frameworks en tools vergeleken en een onderbouwde keuze gemaakt voor een geschikte tech-stack
- - [ ] Je hebt je onderzoek gedocumenteerd in de Wiki
- - [ ] de website staat op Github en heeft een live url
- 
+- [ ] Je hebt een tech stack onderzocht op basis van User experience, Developer experience en Content management experience.
+- [ ] Je onderbouwt in welke omgeving deze tech-stack het beste tot haar recht komt. IOW, welke voorwaarden stelt deze tech-stack aan gebruikers, developers en content managers.
+- [ ] Je presenteert jouw bevindingen in de Readme.md.
+- [ ] Je presenteert jouw bevindingen mondeling aan een specialistisch publiek. Je gebruikt daarbij gepaste presentatiemiddelen.
+
+
+
+

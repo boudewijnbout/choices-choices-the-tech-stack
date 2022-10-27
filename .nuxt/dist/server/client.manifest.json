@@ -1,0 +1,15 @@
+{
+  "@vite/client": {
+    "isEntry": true,
+    "file": "@vite/client",
+    "css": [],
+    "module": true,
+    "resourceType": "script"
+  },
+  "/Users/boudewijnbout/Desktop/fdnd/Semester 3/Sprint 15/choices-choices-the-tech-stack/node_modules/nuxt/dist/app/entry.mjs": {
+    "resourceType": "script",
+    "module": true,
+    "isEntry": true,
+    "file": "/Users/boudewijnbout/Desktop/fdnd/Semester 3/Sprint 15/choices-choices-the-tech-stack/node_modules/nuxt/dist/app/entry.mjs"
+  }
+}
