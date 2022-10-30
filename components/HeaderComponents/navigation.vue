@@ -23,6 +23,29 @@ nav {
 	display: none;
 }
 
+nav a {
+	position: relative;
+}
+
+nav a::before {
+	content: "";
+	position: absolute;
+	bottom: -0.3rem;
+	right: 0;
+	width: 0;
+	height: 2px;
+	background-color: var(--color-black);
+	transition: width 1s cubic-bezier(0.25, 1, 0.5, 1);
+	display: none;
+	z-index: 30;
+}
+
+nav a:hover::before {
+	left: 0;
+	right: auto;
+	width: 100%;
+}
+
 button {
 	display: block;
 	position: relative;
@@ -64,6 +87,10 @@ button.active span:nth-child(3) {
 @media (min-width: 60rem) {
 	nav {
 		display: flex;
+	}
+
+	nav a::before {
+		display: block;
 	}
 
 	button {

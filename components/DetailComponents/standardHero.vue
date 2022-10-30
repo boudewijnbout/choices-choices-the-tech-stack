@@ -7,7 +7,12 @@ const { data: document } = await useAsyncData("document", () =>
 
 <template>
 	<section>
-		<h2></h2>
+		<h2>1.0 Beoogde leerresultaten</h2>
+		<p>
+			De beoogde leerresultaten passen bij het niveau en de oriëntatie van de
+			opleiding en zijn afgestemd op de verwachtingen van het beroepenveld en
+			het vakgebied en op internationale eisen.
+		</p>
 	</section>
 </template>
 

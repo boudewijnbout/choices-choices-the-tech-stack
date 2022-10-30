@@ -9,19 +9,15 @@
 section {
 	background-color: var(--color-cmd-yellow);
 	display: grid;
-	/* grid-template-columns: 1fr 1fr; */
 	grid-template-columns: 1fr;
-	/* grid-gap: 5rem; */
 	grid-gap: 2rem;
 	border-left: 3px solid var(--color-black);
 	border-right: 3px solid var(--color-black);
 	border-bottom: 3px solid var(--color-black);
-	/* padding: 6rem 5rem; */
 	padding: 1rem;
 }
 
 h2 {
-	/* font-size: 3.5rem; */
 	font-size: 2rem;
 }
 
