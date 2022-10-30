@@ -5,6 +5,12 @@ export default defineNuxtConfig({
 	prismic: { endpoint: "cmda-mid-term" },
 
 	app: {
+		head: {
+			title: "CMDA Midterm",
+			htmlAttrs: {
+				lang: "nl",
+			},
+		},
 		pageTransition: { name: "page", mode: "out-in" },
-	},	
+	},
 });
