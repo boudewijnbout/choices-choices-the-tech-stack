@@ -54,7 +54,7 @@ h2 {
 export default {
 	props: {
 		standardHeroTitle: String,
-		standardHeroIntroduction: String,
+		standardHeroIntroduction: Object,
 		standardNumber: Number,
 	},
 };
