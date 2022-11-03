@@ -1,42 +1,5 @@
-# Nuxt 3 Minimal Starter
+# ⚡ CMD Midterm (Nuxt3)
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+<img width="1093" alt="Schermafbeelding 2022-10-13 om 15 28 54" src="https://user-images.githubusercontent.com/45170095/195609979-986ff6be-0528-40b8-8b9a-5d288918c1be.png">
 
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+Dit project omvat een andere versie van de CMD Midterm website, ditmaal gebouwd in een tech stack die bestaat uit `Nuxt3` en `Prismic.io`.
