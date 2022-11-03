@@ -50,3 +50,9 @@ De applicatie is op twee manieren te gebruiken: lokaal en op het web. Lokaal is 
 [Prismic](https://prismic.io/)
 <br>
 [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+
+## 🔓 Licentie
+
+![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
+
+This work is licensed under [GNU GPLv3](./LICENSE).
